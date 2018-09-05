@@ -2,13 +2,6 @@ class PostsController < ApplicationController
     
   # http_basic_authenticate_with name: "omar" , password: "123456" , except: [:index , :show]
 
-   def men
-     @ali = Comment.new
-     @ali.save
-     #ali.title = 'ff'
-     render plain: @ali.inspect
-   end
-
    def index
        @posts = Post.all
    end
